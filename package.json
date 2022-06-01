@@ -1,12 +1,16 @@
 {
-  "dependencies": {
-    "express": "^4.18.1"
+  "name": "fahmidovi-comp229-assignment1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
   },
-  "name": "COMP229_Assignment1",
-  "version": "0.0.1",
-  "description": "COMP229 Assignment 1 - Express Portfolio Site",
-  "main": "server.js",
-  "repository": "https://github.com/FahmidOvi/COMP229_Assignment1",
-  "author": "Fahmid Ovi",
-  "license": "MIT"
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
 }
