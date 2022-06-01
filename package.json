@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "name": "COMP229_Assignment1",
+  "version": "0.0.1",
+  "description": "COMP229 Assignment 1 - Express Portfolio Site",
+  "main": "server.js",
+  "repository": "https://github.com/FahmidOvi/COMP229_Assignment1",
+  "author": "Fahmid Ovi",
+  "license": "MIT"
 }
