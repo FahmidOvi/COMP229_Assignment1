@@ -6,7 +6,7 @@ import logger from 'morgan';
 
 import indexRouter from '../Routes/index';
 
-const app = express();
+let app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -16,11 +16,10 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../../Client')));
-app.use(express.static(path.join(__dirname, '../../node_modules')));
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -28,7 +27,7 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-app.use(function(err: createError.HttpError, req: express.Request, res: express.Response, next: NextFunction) {
+app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -38,4 +37,4 @@ app.use(function(err: createError.HttpError, req: express.Request, res: express.
   res.render('error');
 });
 
-export default app;
+module.exports = app;
