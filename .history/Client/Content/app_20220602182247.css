@@ -59,6 +59,6 @@ text-align: center;
     background-color: #e2ebf0; 
 }
 
-.contact-row {
-    width:70%;
+.row {
+    width = 80%;
 }
