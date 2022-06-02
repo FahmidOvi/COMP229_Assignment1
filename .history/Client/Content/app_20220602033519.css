@@ -38,7 +38,7 @@
 }
 
 .contact-paragraph { 
-    top: 35%;   
+    top: 30%;   
     position: absolute;
     color: white;
     position: absolute;
@@ -52,9 +52,4 @@ text-align: center;
 .contact-col-1 {
     position: relative;
     height: 375px;
-}
-
-.contact-background-2 {
-    height: 375px;
-    background-color: #e2ebf0; 
 }

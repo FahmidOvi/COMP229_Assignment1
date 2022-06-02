@@ -24,6 +24,7 @@
 }
 
 .contact {
+    min-height: 100vh;
 }
 
 .contact-background {
@@ -37,24 +38,11 @@
     background-blend-mode: darken;
 }
 
-.contact-paragraph { 
-    top: 35%;   
-    position: absolute;
+.contact-paragraph {
     color: white;
-    position: absolute;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
+    margin-top: 40%;
 }
 
 .contact-col-1 {
-    position: relative;
     height: 375px;
-}
-
-.contact-background-2 {
-    height: 375px;
-    background-color: #e2ebf0; 
 }
